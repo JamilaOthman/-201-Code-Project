@@ -87,4 +87,4 @@ if (score>=4){
 }else if(score<=3){
     alert('nooo you only got '+score+'out of 7');
 }
-confirm('we are done ... Thanks for your time');
+confirm('we are done .... Thanks for your time');

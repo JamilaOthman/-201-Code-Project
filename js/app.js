@@ -70,12 +70,12 @@ alert('too low')
 alert('the correct answer is 4');
 
 var favfruit=['mango','peache','apple','orange']
-var i=0;
+var j=0;
 var correctanswer = false;
-while(i<=5 && !correctanswer){
-for (var i=0;i<favfruit.length;i++){
+while(j<=5 && !correctanswer){
+for (var j=0;j<favfruit.length;i++){
 var favfruit  =prompt('what is my favorite fruit?');
-if(favfruit[i]===favfruit.toLowerCase()){
+if(favfruit[j]===favfruit.toLowerCase()){
     alert('WoOw you are really good');
     correctanswer= true;
     score++
@@ -89,6 +89,7 @@ if (score>=4){
     alert('you are amazing you got '+score+'out of 7');
 }else if(score<=3){
     alert('nooo you only got '+score+'out of 7');
+    break
 }
 }
 

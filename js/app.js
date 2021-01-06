@@ -1,7 +1,7 @@
-
 'use strict'
 var score=0;
-var Q1='y';
+function Edu(){
+    var Q1='y';
 var Q1=prompt("Am I have bachelors degree?" );
 if(Q1.toLowerCase()==='y'||Q1.toLowerCase==='yes'){
     alert('good start');
@@ -10,9 +10,10 @@ if(Q1.toLowerCase()==='y'||Q1.toLowerCase==='yes'){
 } else{
     alert('Oopsno');
 }
-
-
-var Q2='n';
+}
+Edu();
+function Pets(params) {
+    var Q2='n';
 var Q2=prompt("Do I like cats");
 if(Q2.toLowerCase()==='n' ||Q2.toLowerCase==='no'){
     alert('you are right');
@@ -20,10 +21,12 @@ if(Q2.toLowerCase()==='n' ||Q2.toLowerCase==='no'){
     // console.log('you are right')
 } else{
     alert('are you sure???!!');
+}    
 }
+Pets();
 
-
-var Q3='y';
+function Live(params) {
+    var Q3='y';
 var Q3=prompt("Do I live in Amman? ");
 if(Q3.toLowerCase()==='y' ||Q3.toLowerCase==='yes'){
     alert('yes I do');
@@ -31,9 +34,12 @@ if(Q3.toLowerCase()==='y' ||Q3.toLowerCase==='yes'){
     // console.log('right')
 } else{
     alert('actually I do');
+}    
 }
+Live();
 
-var Q4='y';
+function Hobbies(params) {
+    var Q4='y';
 var Q4=prompt("Do I like cooking?" );
 if(Q4.toLowerCase()==='y'||Q4.toLowerCase==='yes'){
     alert('Correct!!');
@@ -42,7 +48,11 @@ if(Q4.toLowerCase()==='y'||Q4.toLowerCase==='yes'){
 } else{
     alert('actually I do');
 }
-var Q5='n&&no';
+}
+Hobbies();
+
+function Seson(params) {
+    var Q5='n&&no';
 var Q5=prompt("Is my favorite season is summer?" );
 if(Q5.toLowerCase()==='n'||Q5.toLowerCase==='no'){
     alert('you are amzing');
@@ -51,14 +61,19 @@ if(Q5.toLowerCase()==='n'||Q5.toLowerCase==='no'){
 } else{
     alert('actually it is not summer');
 }
-var mydogage=3
+}
+Seson();
+
+
+function MyDogage(params) {
+    var mydogage=3
 var opp=[1,2,3,4]
 for (var i=0; i<4;i++ ){
 var mydogage = prompt('guess my dog age');
 if(mydogage==4){
 alert('right')
 score++
-break
+break;
 }
  else if (mydogage>4){
     alert('too high')
@@ -68,8 +83,12 @@ alert('too low')
 }
 }
 alert('the correct answer is 4');
+    
+}
+MyDogage();
 
-var favfruit=['mango','peache','apple','orange']
+function favFruit(params) {
+    var favfruit=['mango','peache','apple','orange']
 var j=0;
 var correctanswer = false;
 
@@ -79,18 +98,19 @@ if(favfruit[j]===favfruit.toLowerCase()){
     alert('WoOw you are really good');
     correctanswer= true;
     score++
-    break
+    break;
 } else {
     alert('correct answers are mango and peache');
+}   
 }
-
+favFruit();
 
 if (score>=4){
     alert('you are amazing you got '+score+'out of 7');
 }else if(score<=3){
-    alert('nooo you only got '+score+'out of 7');
-    break
+    alert ('nooo you only got '+score+'out of 7');
+
 }
 }
 
-confirm('we are done .... Thanks for your time')
+confirm('we are done .... Thanks for your time');

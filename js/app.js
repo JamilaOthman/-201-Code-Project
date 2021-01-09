@@ -2,26 +2,26 @@
 'use strict'
 var score = 0;
 function Q1(params) {
-    
 
-var Q1 = 'y';
-var Q1 = prompt("Am I have bachelors degree?");;
-while (Q1 === null || Q1 === '') {
-    alert('Please  insert a value');
-    Q1 = prompt('Am I have bachelors degree? ');
-    if (Q1.toLowerCase() === 'y' || Q1.toLowerCase === 'yes') {
-        alert('good start');
-        score++;
-       
-    } else {
-        alert('Oopsno');
+
+    var Q1 = 'y';
+    var Q1 = prompt("Am I have bachelors degree?");;
+    while (Q1 === null || Q1 === '') {
+        alert('Please  insert a value');
+        Q1 = prompt('Am I have bachelors degree? ');
+        if (Q1.toLowerCase() === 'y' || Q1.toLowerCase === 'yes') {
+            alert('good start');
+            score++;
+
+        } else {
+            alert('Oopsno');
+        }
     }
-}
 }
 Q1();
 
 function Q2(params) {
-    
+
 
     var Q2 = 'n';
     var Q2 = prompt("Do I like cats");
@@ -36,48 +36,48 @@ function Q2(params) {
 Q2();
 
 function Q3(params) {
-    
-   var Q3 = 'y';
+
+    var Q3 = 'y';
     var Q3 = prompt("Do I live in Amman? ");
     if (Q3.toLowerCase() === 'y' || Q3.toLowerCase === 'yes') {
         alert('yes I do');
         score++
-       
+
     } else {
         alert('actually I do');
     }
 }
- Q3();
+Q3();
 function Q4(params) {
-    
+
 
     var Q4 = 'y';
     var Q4 = prompt("Do I like cooking?");
     if (Q4.toLowerCase() === 'y' || Q4.toLowerCase === 'yes') {
         alert('Correct!!');
         score++
-        
+
     } else {
         alert('actually I do');
     }
 }
 Q4();
 function Q5(params) {
-    
+
 
     var Q5 = 'n&&no';
     var Q5 = prompt("Is my favorite season is summer?");
     if (Q5.toLowerCase() === 'n' || Q5.toLowerCase === 'no') {
         alert('you are amzing');
         score++
-        
+
     } else {
         alert('actually it is not summer');
     }
 }
 Q5();
 function mydogage(params) {
-    
+
 
     var mydogage = 3
     var opp = [1, 2, 3, 4]
@@ -98,31 +98,35 @@ function mydogage(params) {
     alert('the correct answer is 4');
 }
 mydogage();
+
 function favfruit(params) {
-    
 
-    var favfruit = ['mango', 'peache', 'apple', 'orange']
-    var j = 0;
-    var correctanswer = false;
+    var fruit = ['mango', 'peache', 'apple', 'orange'];
+    for (var guess = 0; guess < 6; guess++) {
 
-    for (var j = 0; j < favfruit.length; i++) {
-        var favfruit = prompt('what is my favorite fruit?');
-        if (favfruit[j] === favfruit.toLowerCase()) {
-            alert('WoOw you are really good');
-            correctanswer = true;
-            score++
-            break
-        } else {
-            alert('correct answers are mango and peache');
+        var guessfruit = prompt('Please Guess My Favorite fruit');
+        var guessToLower = guessfruit.toLowerCase();
+        for (var i = 0; i < fruit.length; i++) {
+            if (guessToLower === fruit[i]) {
+                console.log('guessToLower>>> inside if ', guessToLower);
+                alert('YES !!! Its My Favorite fruit');
+                score++;
+                guess = 6;
+                break;
+            }
         }
+        if (guess !== 6) {
+            alert('try again');
     }
 }
-favfruit();
+alert('my favfruits are mango, peache, apple and orange');
+}
+favfruit()
 
 if (score >= 4) {
-        alert('you are amazing you got ' + score + 'out of 7');
-    } else if (score <= 3) {
-        alert('nooo you only got ' + score + 'out of 7');
-    }
+    alert('you are amazing you got ' + score + 'out of 7');
+} else if (score <= 3) {
+    alert('nooo you only got ' + score + 'out of 7');
+}
 
-    confirm('we are done .... Thanks for your time')
+confirm('we are done .... Thanks for your time')
